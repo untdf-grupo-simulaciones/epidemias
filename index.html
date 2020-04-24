@@ -34,6 +34,16 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
 
+  <style type="text/css">
+    #video .modal-dialog {
+      width: 874px !important;
+      max-width: 874px;
+      border: 10px white solid;
+      height: 500px;
+      min-height: 500px;
+    }    
+  </style>
+
 </head>
 
 <body id="page-top">
@@ -108,9 +118,12 @@
       </div>
 
       <div class="row text-center">
-        <div class="col-md-12">
-      		<a class="btn btn-primary btn-xl text-uppercase" href="simulador/simulador.html">Abrir el simulador</a>
-    		</div>
+        <div class="col">
+          <button type="button" class="btn btn-secondary btn-xl text-uppercase mr-3" data-toggle="modal" data-target="#video">
+            Video explicativo
+          </button>
+          <a class="btn btn-primary btn-xl text-uppercase" href="simulador/simulador.html">Abrir el simulador</a>
+        </div>
   		</div>
 
     </div>
@@ -253,6 +266,16 @@ Investigador de Conicet en el Instituto de Física de Líquidos y Sistemas Biol�
       </div>
     </div>
   </footer>
+
+
+  <!-- Video -->
+  <div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="video" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <iframe width="854" height="480" src="https://www.youtube.com/embed/RbajHXQWgGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
